@@ -18,17 +18,16 @@ time, mark, audio, video {
 }
 
 *{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-
 }
 *:before, *:after {
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -65,9 +64,7 @@ em.regul {
     font-weight: 400;
 }
 em.emphasis {
-
     font-style: italic;
-    font-family: 'Myriad Pro', 'Trebuchet MS', Trebuchet, Arial, Helvetica, sans-serif;
 }
 
 strong, b {
@@ -86,7 +83,7 @@ a:hover {
     text-decoration: underline;
     color: rgba(0, 114, 255, 1);
 }
-html, body, .container {
+html, body {
     min-height: 100%;
 }
 
@@ -97,6 +94,7 @@ body {
     width: 100%;
     background-color: rgba(243, 244, 246, 1);
     line-height: 1;
+
 }
 .header__container {
     height: 56rem;
@@ -134,11 +132,12 @@ body {
     font: normal normal 1.6rem/1.25 'PT Sans', Arial, Helvetica, sans-serif;
     color: rgba(80, 80, 80, 1);
     text-align: left;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 .singlecol {
     width: 100%;
     max-width: 48rem;
-    padding: 0.8rem;
     margin: 0 auto;
 }
 .singleheadcol {
@@ -146,10 +145,11 @@ body {
     max-width: 48rem;
     padding: 0 0.8rem;
     margin: 0 auto;
+
 }
 #storename__kalilaska {
     position: absolute;
-    top: 6.4rem;
+    top: 3.6rem;
     z-index: 2;
 }
 #panel__phoneshedule {
@@ -158,35 +158,60 @@ body {
     z-index: 2;
 }
 .headindents {
-    padding: 0 0 6rem 0;
+    padding: 0 0 5.6rem 0;
+}
+.representindents {
+    padding: 5.6rem 0;
+}
+.categorwide {
+    width: 50%;
+    padding: 0.8rem;
+    float: left;
+    clear: right;
+}
+.categormount {
+    background-color: rgba(160, 160, 160, 1);
+    text-align: center;
+}
+.clearfixing {
+    width: 100%;
+    height: 0;
+    margin: 0;
+    color: transparent;
+    background-color: transparent;
+    border:0 none;
+    display: block;
 }
 .textual {
-
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    overflow: hidden;
 }
 .textual h1 {
-    font: normal bold 5.2rem/1 'PT Sans', Arial, Helvetica, sans-serif;
+    font-size: 5.2rem;
+    line-height: 1.5;
+    font-weight: bold;
     letter-spacing: 0.1rem;
-    color: rgba(255, 255, 255, 1);
 }
 .textual h2 {
-    padding: 1.6rem 0 0;
-    font: normal bold 5.4rem/1 'PT Sans', Arial, Helvetica, sans-serif;
-    color: rgba(255, 255, 255, 1);
+    font-size: 5.2rem;
+    line-height: 1.3;
+    font-weight: bold;
 }
 .textual h3 {
-    padding: 1.6rem 0 0;
-    font: normal normal 3rem/1.2 'PT Sans', Arial, Helvetica, sans-serif;
-    color: rgba(255, 255, 255, 1);
+    font-size: 3rem;
+    line-height: 1.4;
+    font-weight: normal;
 }
 .textual h4 {
-    padding: 1.8rem 0 0;
-    font: normal normal 3rem/1 'PT Sans', Arial, Helvetica, sans-serif;
-    color: rgba(255, 255, 255, 1);
+    font-size: 2.8rem;
+    line-height: 1.4;
+    font-weight: normal;
 }
 .textual h5 {
-    padding: 0;
-    font: normal normal 2.5rem/1 'PT Sans', Arial, Helvetica, sans-serif;
-    color: rgba(255, 255, 255, 1);
+    font-size: 2.5rem;
+    line-height: 1.4;
+    font-weight: normal;
 }
 
 /* Конец: Модификаторы*/
