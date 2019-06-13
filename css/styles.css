@@ -61,6 +61,9 @@ table {
 em {
     font-style: italic;
 }
+em.regul {
+    font-weight: 400;
+}
 em.emphasis {
 
     font-style: italic;
@@ -83,3 +86,107 @@ a:hover {
     text-decoration: underline;
     color: rgba(0, 114, 255, 1);
 }
+html, body, .container {
+    min-height: 100%;
+}
+
+html {
+    font: normal 10px/10px sans-serif;
+}
+body {
+    width: 100%;
+    background-color: rgba(243, 244, 246, 1);
+    line-height: 1;
+}
+.header__container {
+    height: 56rem;
+    background-image: url("../img/header/640/header-mechanic-560.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.header__column {
+    height: 100%;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Начало: Модификаторы*/
+.overlay:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+.fullwide {
+    width: 100%;
+}
+.wideadaptive {
+    width: 100%;
+    max-width: 64rem;
+    margin: 0 auto;
+    overflow: hidden;
+    font: normal normal 1.6rem/1.25 'PT Sans', Arial, Helvetica, sans-serif;
+    color: rgba(80, 80, 80, 1);
+    text-align: left;
+}
+.singlecol {
+    width: 100%;
+    max-width: 48rem;
+    padding: 0.8rem;
+    margin: 0 auto;
+}
+.singleheadcol {
+    width: 100%;
+    max-width: 48rem;
+    padding: 0 0.8rem;
+    margin: 0 auto;
+}
+#storename__kalilaska {
+    position: absolute;
+    top: 6.4rem;
+    z-index: 2;
+}
+#panel__phoneshedule {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+.headindents {
+    padding: 0 0 6rem 0;
+}
+.textual {
+
+}
+.textual h1 {
+    font: normal bold 5.2rem/1 'PT Sans', Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1rem;
+    color: rgba(255, 255, 255, 1);
+}
+.textual h2 {
+    padding: 1.6rem 0 0;
+    font: normal bold 5.4rem/1 'PT Sans', Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 1);
+}
+.textual h3 {
+    padding: 1.6rem 0 0;
+    font: normal normal 3rem/1.2 'PT Sans', Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 1);
+}
+.textual h4 {
+    padding: 1.8rem 0 0;
+    font: normal normal 3rem/1 'PT Sans', Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 1);
+}
+.textual h5 {
+    padding: 0;
+    font: normal normal 2.5rem/1 'PT Sans', Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Конец: Модификаторы*/
