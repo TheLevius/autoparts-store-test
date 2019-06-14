@@ -5,25 +5,28 @@
     <title>Кали Ласка Плюс</title>
     <link rel="stylesheet" type="text/css" href="css/fonts.css"/>
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/fontawesomeall.css"/>
 </head>
-<body>
+</jav>
 <header>
     <div class="header__block fullwide">
-        <div class="header__container overlay wideadaptive">
-            <div class="header__column singleheadcol">
-                <div class="storename__box textual" id="storename__kalilaska">
-                    <h1>«Калі Ласка»</h1>
-                    <h3>Магазин автозапчастей</h3>
-                </div>
-                <div class="storename__backpanel" id="panel__phoneshedule">
-                    <div class="storephone__box textual headindents">
-                        <h4>Телефоны:</h4>
-                        <h2>+375 (17) 2416141;</h2>
+        <div class="header__container wideadaptive">
+            <div class="header__overlay opaciting">
+                <div class="header__column singleheadcol">
+                    <div class="storename__box textual" id="storename__kalilaska">
+                        <h1>«Калі Ласка»</h1>
+                        <h3>Магазин автозапчастей</h3>
                     </div>
-                    <div class="storeshedule__box textual headindents">
-                        <h5>График работы:</h5>
-                        <h3><strong>9:00 – 19:00</strong> пн-пт.,<br><strong>11:00 – 17:00</strong> сб-вск.</h3>
+                    <div class="storename__backpanel" id="panel__phoneshedule">
+                        <div class="storephone__box textual headindents">
+                            <h4>Телефоны:</h4>
+                            <h2>+375 (17) 2416141;</h2>
+                        </div>
+                        <div class="storeshedule__box textual headindents">
+                            <h5>График работы:</h5>
+                            <h3><strong>9:00 – 19:00</strong> пн-пт.,<br><strong>11:00 – 17:00</strong> сб-вск.</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -92,46 +95,98 @@
         </div>
         <div class="storeorders__container wideadaptive">
             <div class="storeorders__column singleheadcol">
-                <div class="storeorders__box">
-                    <h5>Кроме того, Вы можете заказать у нас любую запасную часть для Вашего автомобиля в нашем магазине.</h5>
+                <div class="storeorders__box textual representindents">
+                    <p>Кроме того, Вы можете заказать у нас любую запасную часть для Вашего автомобиля в нашем магазине.</p>
                 </div>
             </div>
         </div>
         <div class="storeadvantages__container wideadaptive">
-            <div class="storeadvantages__column singleheadcol">
-                <div class="storeadvantages__box">
-                    <div class="storeadvantages__img">
-                        <img src="" alt="speedometer">
+            <div class="storeadvantages__overlay opaciting">
+                <div class="storeadvantages__column singleheadcol">
+                    <div class="storeadvantages__box textual timesaveindents">
+                        <div class="storeadvantages__img adaptiveimg">
+                            <img src="img/common/vector/speedometer-w.svg" alt="speedometer">
+                        </div>
+                        <div class="storeadvantages__text advantageindents">
+                            <p>Вы не тратите свое время на поиски, потому что мы сотрудничаем со всеми оптовыми базами и предоставим необходимую Вам запчасть по минимальной цене.</p>
+                        </div>
+                        <div class="storeadvantages__img adaptiveimg">
+                            <img src="img/common/vector/money-w.svg" alt="money">
+                        </div>
                     </div>
-                    <h5>Вы не тратите свое время на поиски, потому что мы сотрудничаем со всеми оптовыми базами и предоставим необходимую Вам запчасть по минимальной цене.</h5>
                 </div>
             </div>
         </div>
         <div class="storegallery__container wideadaptive">
             <div class="storegallery__column singleheadcol">
                 <div class="storegallery__box">
-                    &nbsp;
+                    <img src="" alt="Галерея">
                 </div>
             </div>
         </div>
         <div class="storestuff__container wideadaptive">
-            <div class="storestuff__column singleheadcol">
-                <div class="storestuff__box">
-                    <h5>Более того, мы оказываем профессиональные консультации по подбору и ремонту автомобиля, которые позволяют вам существенно сэкономить.</h5>
-                </div>
-                <div class="storestuff__gallery">
-                    <div class="storestuff__panel">
-                        <h4>Наши сотрудники</h4>
+            <div class="storestuff__overlay opaciting">
+                <div class="storestuff__column singleheadcol">
+                    <div class="storestuff__box textual representindents">
+                        <p>Более того, мы оказываем профессиональные консультации по подбору и ремонту автомобиля, которые позволяют вам существенно сэкономить.</p>
                     </div>
-                    <div class="storestuff__cellswrap">
-                        <div class="storestuff__cell">
-                            <div class="storestuff__img">
-                                <img src="" alt="Михаил Макаренко">
-                            </div>
+                    <div class="storestuff__gallery textual textcentring">
+                        <div class="storestuff__panel textual-small stuffpanelindents">
+                            <p><strong>Наши сотрудники:</strong></p>
                         </div>
-                        <div class="storestuff__namepanel">
-                            <h3>Михаил Макаренко</h3>
-                            <h4><em class="regul">Чисто шнырь</em></h4>
+                        <!-- Карусель для персонала -->
+                        <div class="storestuff__carousel sliderstuff" id="storestuff__carousel">
+                            <!-- Навигация для слайдера -->
+                            <div class="gallerynav__box prevslidepos leftnavi" id="prevslide">
+                                <i class="gallerynav__letter fas fa-arrow-circle-left typonavi leftpositsymbol"></i>
+                            </div>
+                            <div class="gallerynav__box nextslidepos rightnavi" id="nextslide">
+                                <i class="gallerynav__letter fas fa-arrow-circle-right typonavi rightpositsymbol"></i>
+                            </div>
+                            <!-- Слайды для сотрудников -->
+                            <div class="storestuff__cellswrap gallering owl-carousel" id="storestuff__cellswrapper">
+                                <div class="storestuff__cell stuffcellindents" id="storestaff__cellfirst">
+                                    <div class="storestuff__imgwrapper stuffwrapper">
+                                        <div class="storestuff__img categorcircleimg" id="storestuff__mishka">
+                                        </div>
+                                    </div>
+                                    <div class="storestuff__namepanel textual-small stuffpanelindents">
+                                        <h4><strong>Михаил Макаренко</strong></h4>
+                                        <p><em class="regul">Чисто шнырь</em></p>
+                                    </div>
+                                </div>
+                                <div class="storestuff__cell stuffcellindents">
+                                    <div class="storestuff__imgwrapper stuffwrapper">
+                                        <div class="storestuff__img categorcircleimg" id="storestuff__andrei">
+                                        </div>
+                                    </div>
+                                    <div class="storestuff__namepanel textual-small stuffpanelindents">
+                                        <h4><strong>Андрей Тарашкевич</strong></h4>
+                                        <p><em class="regul">Владелец</em></p>
+                                    </div>
+                                </div>
+                                <div class="storestuff__cell stuffcellindents">
+                                    <div class="storestuff__imgwrapper stuffwrapper">
+                                        <div class="storestuff__img categorcircleimg" id="storestuff__balet">
+                                        </div>
+                                    </div>
+                                    <div class="storestuff__namepanel textual-small stuffpanelindents">
+                                        <h4><strong>Андрей Балерон</strong></h4>
+                                        <p><em class="regul">Продавец консультант</em></p>
+                                    </div>
+                                </div>
+                                <div class="storestuff__cell stuffcellindents">
+                                    <div class="storestuff__imgwrapper stuffwrapper">
+                                        <div class="storestuff__img categorcircleimg" id="storestuff__balet">
+                                        </div>
+                                    </div>
+                                    <div class="storestuff__namepanel textual-small stuffpanelindents">
+                                        <h4><strong>Жена Владельца</strong></h4>
+                                        <p><em class="regul">CEO</em></p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -164,6 +219,7 @@
     </div>
 </footer>
 <script src="js/jquery-3.1.1.js"></script>
+<script src="js/owl.carousel.js"></script>
 <script src="js/javascript.js"></script>
 </body>
 </html>
