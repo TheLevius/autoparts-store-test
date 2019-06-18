@@ -1,8 +1,35 @@
 /* НАЧАЛО АДАПТИВНАЯ КАРУСЕЛЬ нa owv-carousel */
 $(document).ready(function() {
-    $('.owl-carousel').owlCarousel({
+
+    var stuffOwl = $('.storestuff__cellswrap');
+    stuffOwl.owlCarousel({
         loop:true,
-        margin:0,
+        margin:100,
+        dots:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            1440:{
+                items:1
+            }
+        }
+    });
+    // Go to the next item
+    $('.gallerynav__nextbox').click(function() {
+        stuffOwl.trigger('next.owl.carousel', [300]);
+    })
+    // Go to the previous item
+    $('.gallerynav__prevbox').click(function() {
+        // With optional speed parameter
+        // Parameters has to be in square bracket '[]'
+        stuffOwl.trigger('prev.owl.carousel', [300]);
+    });
+    var productsOwl = $('.storegallery__price-slide');
+    productsOwl.owlCarousel({
+        loop:true,
+        margin:100,
+
         responsive:{
             0:{
                 items:1
@@ -14,18 +41,7 @@ $(document).ready(function() {
 
 
     })
-    var owl = $('.owl-carousel');
-    owl.owlCarousel();
-    // Go to the next item
-    $('.nextslidepos').click(function() {
-        owl.trigger('next.owl.carousel');
-    })
-    // Go to the previous item
-    $('.prevslidepos').click(function() {
-        // With optional speed parameter
-        // Parameters has to be in square bracket '[]'
-        owl.trigger('prev.owl.carousel', [300]);
-    })
+
 
 
 });
