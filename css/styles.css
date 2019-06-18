@@ -293,6 +293,53 @@ body {
 .timesaveindents {
     padding: 6rem 0;
 }
+.consultindents {
+    padding: 3.2rem 0 8rem;
+}
+.productslide-indents {
+    padding: 4rem;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 1rem 2rem -2.4rem rgba(0, 0, 0, 1), 0px -1rem 2rem -2.4rem rgba(0, 0, 0, 1);
+}
+.galleryindents {
+    width: 100%;
+    height: auto;
+    padding-bottom: 75%;
+    position: relative;
+    background-size: 28rem auto;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+.productwrapindents {
+    padding: 4.8rem 0 8rem 0;
+}
+#firstproductslide {
+    background-image: url("../img/products/640/liquid-totallhmplus.png");
+}
+#secondproductslide {
+    background-image: url("../img/products/640/filter-bosch.png");
+}
+#thirdproductslide {
+    background-image: url("../img/products/640/filter-bosch.png");
+}
+#fourproductslide {
+    background-image: url("../img/products/640/liquid-totallhmplus.png");
+}
+#fifthproductslide {
+    background-image: url("../img/products/640/filter-bosch.png");
+}
+
+.color-indents {
+    width: 100%;
+    max-width: 24rem;
+    padding: 2rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(40, 170, 226, 0.6);
+    color: rgba(255, 255, 255, 1);
+}
+
 .adaptiveimg {
     width: 100%;
     margin: 0 auto;
@@ -324,7 +371,6 @@ body {
 
 .stuffcellindents {
     padding: 4.8rem 0;
-    background-color: rgba(0, 0, 0, 0.6);
 }
 .stuffpanelindents {
     padding: 2.4rem 1.6rem 0;
@@ -335,19 +381,17 @@ body {
     position: relative;
     overflow: hidden;
 }
-.gallering {
 
-}
-.actualslide {
-}
-.nextslidepos, .prevslidepos {
+.slidepos {
     width: 20%;
     height: auto;
     position: absolute;
     margin: auto;
     top: 0;
     bottom: 0;
+    cursor: pointer;
     z-index: 3;
+
 }
 .typonavi {
     height: 3.2rem;
@@ -374,6 +418,10 @@ body {
 }
 .leftpositsymbol {
     right: 1.6rem;
+}
+
+.addresindents {
+    padding: 8rem 0 3.2rem;
 }
 .clearfixing {
     width: 100%;
@@ -434,11 +482,11 @@ body {
     font-weight: normal;
 }
 .textual a {
-    color: rgba(255, 255, 255, 1);
+    color: inherit;
     text-decoration: none;
 }
 .textual a:hover, a:focus {
-    color: rgba(255, 255, 255, 1);
+    color: inherit;
     text-decoration: none;
 }
 .textual-small {
@@ -455,6 +503,61 @@ body {
     font-size: 2.4rem;
     line-height: 1.5;
     font-weight: normal;
+}
+.textproduct {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    overflow: hidden;
+}
+
+.textproduct h1 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    font-weight: bold;
+}
+.textproduct h2 {
+    font-size: 3.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+}
+.textproduct h3 {
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: normal;
+}
+.textproduct h4 {
+    padding-top: 0.8rem;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    font-weight: normal;
+}
+.textproduct h5 {
+    padding-top: 2.4rem;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    font-weight: normal;
+}
+.textproduct h6 {
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: bold;
+}
+.textproduct p {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    font-weight: normal;
+}
+.textproduct sup {
+    font-size: 60%;
+    line-height: 0;
+}
+.textproduct a {
+    color: inherit;
+    text-decoration: none;
+}
+.textproduct a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
 }
 /* Конец: Типография*/
 
