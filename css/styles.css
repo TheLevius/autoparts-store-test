@@ -98,7 +98,8 @@ body {
 }
 .header__container {
     height: 56rem;
-    background: url("../img/header/640/header-bg-mechanic-640.jpg") no-repeat left center;
+    background: url("../img/header/640/mercedes-benz-red-640w.jpg") no-repeat;
+    background-position: center;
     background-size: auto 100%;
     position: relative;
 }
@@ -113,12 +114,13 @@ body {
     color: rgba(255, 255, 255, 1);
 }
 .storecategories__container {
-    background: rgba(0, 0, 0, 1) url("../img/categories-pic/640/categories-bg-service.jpg") no-repeat top left;
+    background: rgba(0, 0, 0, 1) url("../img/categories-pic/640/ferrari-bg-640x2.jpg") no-repeat;
+    background-position: center;
     background-size: auto 100%;
     position: relative;
 }
 .storeadvantages__container {
-    background: rgba(0, 0, 0, 1) url("../img/categories-pic/640/timesave-bg-hand.jpg") no-repeat center;
+    background: rgba(60, 180, 226, 1) no-repeat center;
     background-size: cover;
     position: relative;
     color: rgba(255, 255, 255, 1);
@@ -161,27 +163,43 @@ body {
     transition: 300ms;
 }
 .opaciting:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.opaciting2 {
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 300ms;
+}
+.opaciting2:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+.opaciting3 {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 300ms;
+}
+.opaciting3:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
 .singlecol {
     width: 100%;
     max-width: 48rem;
-    padding: 5.2rem 0;
+    padding: 5.6rem 0;
     margin: 0 auto;
     overflow: hidden;
 }
 .singleheadcol {
     width: 100%;
     max-width: 48rem;
-    padding: 0 0.8rem;
+    padding: 0 1.6rem;
     margin: 0 auto;
     overflow: hidden;
 
 }
 #storename__kalilaska {
     position: absolute;
-    top: 3.6rem;
+    top: 6.4rem;
     z-index: 2;
+    white-space: nowrap;
+    text-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.8);
 }
 #panel__phoneshedule {
     position: absolute;
@@ -190,9 +208,12 @@ body {
 }
 .headindents {
     padding: 0 0 5.6rem 0;
+    white-space: nowrap;
+    text-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.8);
 }
 .representindents {
-    padding: 8rem 0;
+    padding: 6rem 0;
+    color: rgba(90, 90, 90, 0.7);
 }
 .categorwide {
     width: 50%;
@@ -201,29 +222,25 @@ body {
     clear: right;
 }
 .categormount {
-    padding: 2.4rem;
-    background-color: rgba(255, 255, 255, 0.6);
+    padding: 2rem 0.8rem;
     text-align: center;
     border-radius: 0.8rem;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 255);
     transition: 300ms;
-}
-.categormount:hover {
-    background-color: rgba(255, 255, 255, 0.8);
 }
 .categorwrapper {
     width: 100%;
     max-width: 17.6rem;
-    padding: 2.4rem;
+    padding: 1.6rem;
     margin: 0 auto;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.7);
     transition: 500ms;
     box-shadow: 0 0 1.6rem 0.1rem rgba(0, 0, 0, 0.1);
 }
 .categorwrapper:hover {
     background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 0 1.6rem 0.1rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0.8rem -0.2rem rgba(0, 0, 0, 0.6);
 }
 .categorcircleimg {
     width: 100%;
@@ -291,13 +308,14 @@ body {
     padding-top: 1.6rem;
 }
 .timesaveindents {
-    padding: 6rem 0;
+    padding: 4rem 0;
 }
 .consultindents {
-    padding: 3.2rem 0 8rem;
+    padding: 1.2rem 0 6rem;
+    color: rgba(90, 90, 90, 0.7);
 }
 .productslide-indents {
-    padding: 4rem;
+    padding: 0.8rem;
     background: rgba(255, 255, 255, 1);
     box-shadow: 0px 1rem 2rem -2.4rem rgba(0, 0, 0, 1), 0px -1rem 2rem -2.4rem rgba(0, 0, 0, 1);
 }
@@ -306,12 +324,12 @@ body {
     height: auto;
     padding-bottom: 75%;
     position: relative;
-    background-size: 28rem auto;
+    background-size: 14.4rem auto;
     background-repeat: no-repeat;
     background-position: center right;
 }
 .productwrapindents {
-    padding: 4.8rem 0 8rem 0;
+    padding: 0 0 8rem 0;
 }
 #firstproductslide {
     background-image: url("../img/products/640/liquid-totallhmplus.png");
@@ -331,13 +349,16 @@ body {
 
 .color-indents {
     width: 100%;
-    max-width: 24rem;
-    padding: 2rem;
+    max-width: 14.4rem;
+    padding: 0.8rem;
     position: absolute;
     left: 0;
     bottom: 0;
     background: rgba(40, 170, 226, 0.6);
     color: rgba(255, 255, 255, 1);
+}
+.advanced-info {
+    display: none;
 }
 
 .adaptiveimg {
@@ -345,18 +366,27 @@ body {
     margin: 0 auto;
     text-align: center;
     overflow: hidden;
+    font-size: 0;
+    line-height: 0;
 }
 .adaptiveimg img {
     width: 100%;
-    max-width: 20rem;
+    max-width: 12rem;
     height: auto;
     margin: 0 auto;
 }
 .advantageindents {
-    padding: 6rem 0;
+    padding: 4rem 0;
+}
+.borderframing {
+    width: 100%;
+    height: 0.6rem;
+    font-size: 0;
+    line-height: 0;
+    background-color: rgba(60, 180, 226, 1);
 }
 .stuffwrapper {
-    max-width: 20.8rem;
+    max-width: 18rem;
     margin: 0 auto;
     border: 0.4rem solid rgba(255, 255, 255, 1);
     border-radius: 50%;
@@ -373,7 +403,21 @@ body {
     padding: 4.8rem 0;
 }
 .stuffpanelindents {
-    padding: 2.4rem 1.6rem 0;
+    max-width: 20rem;
+    padding: 0 1.6rem 0.8rem;
+    margin: 0 auto;
+    line-height: 1;
+    background: rgba(60, 180, 226, 1);
+    border-radius: 0 0 0.8rem 0.8rem;
+    position: relative;
+    display: block;
+    z-index: 2;
+    overflow: visible;
+}
+.stuffnamesindents {
+    padding: 2.4rem 0 0;
+    text-shadow: 0 0 0.4rem rgba(0, 0, 0, 1);
+    letter-spacing: 0.1rem;
 }
 .sliderstuff {
     width: 100%;
@@ -383,8 +427,8 @@ body {
 }
 
 .slidepos {
-    width: 20%;
-    height: auto;
+    width: 3.2rem;
+    height: 70%;
     position: absolute;
     margin: auto;
     top: 0;
@@ -414,14 +458,15 @@ body {
 }
 
 .rightpositsymbol {
-    left: 1.6rem;
+    left: 0;
 }
 .leftpositsymbol {
-    right: 1.6rem;
+    right: 0;
 }
 
 .addresindents {
-    padding: 8rem 0 3.2rem;
+    padding: 6rem 0 3.2rem;
+    color: rgba(90, 90, 90, 0.8);
 }
 .clearfixing {
     width: 100%;
@@ -432,10 +477,20 @@ body {
     border:0 none;
     display: block;
 }
+.footerbgcolor {
+    background-color: rgba(70, 95, 105, 1);
+    color: rgba(255, 255, 255, 0.4);
+}
+.footercontent {
+    padding: 2.4rem 0;
+}
 /* Начало: Типография*/
 
 .stufftypocolor {
     color: rgba(80, 80, 80, 1);
+}
+.mapscolindents {
+    line-height: 0;
 }
 .textcentring {
     text-align: center;
@@ -446,39 +501,39 @@ body {
     overflow: hidden;
 }
 .textual h1 {
-    font-size: 5.2rem;
+    font-size: 4.8rem;
     line-height: 1.5;
     font-weight: bold;
     letter-spacing: 0.1rem;
 }
 .textual h2 {
-    font-size: 5.2rem;
+    font-size: 3.2rem;
     line-height: 1.3;
     font-weight: bold;
 }
 .textual h3 {
-    font-size: 3rem;
-    line-height: 1.4;
-    font-weight: normal;
-}
-.textual h4 {
     font-size: 2.8rem;
     line-height: 1.4;
     font-weight: normal;
 }
-.textual h5 {
+.textual h4 {
     font-size: 2.4rem;
     line-height: 1.4;
     font-weight: normal;
 }
+.textual h5 {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-weight: normal;
+}
 .textual h6 {
-    font-size: 2rem;
-    line-height: 1.2;
+    font-size: 1.6rem;
+    line-height: 2rem;
     font-weight: bold;
 }
 .textual p {
-    font-size: 2rem;
-    line-height: 1.2;
+    font-size: 1.6rem;
+    line-height: 1.5;
     font-weight: normal;
 }
 .textual a {
@@ -496,7 +551,6 @@ a[href^="tel"] {
 .textual-small {
     font-family: 'PT Sans', Arial, Helvetica, sans-serif;
     font-style: normal;
-    overflow: hidden;
 }
 .textual-small p {
     font-size: 1.6rem;
@@ -515,29 +569,29 @@ a[href^="tel"] {
 }
 
 .textproduct h1 {
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     line-height: 1.2;
     font-weight: bold;
 }
 .textproduct h2 {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
     line-height: 1.4;
     font-weight: normal;
 }
 .textproduct h3 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 1.2;
     font-weight: normal;
 }
 .textproduct h4 {
-    padding-top: 0.8rem;
-    font-size: 1.4rem;
+    padding-top: 0.4rem;
+    font-size: 1.2rem;
     line-height: 1.2;
     font-weight: normal;
 }
 .textproduct h5 {
-    padding-top: 2.4rem;
-    font-size: 1.8rem;
+    padding-top: 1.6rem;
+    font-size: 1.4rem;
     line-height: 1.2;
     font-weight: normal;
 }
@@ -547,6 +601,7 @@ a[href^="tel"] {
     font-weight: bold;
 }
 .textproduct p {
+    padding-top: 0.8rem;
     font-size: 1.2rem;
     line-height: 1.2;
     font-weight: normal;
