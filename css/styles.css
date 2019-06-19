@@ -482,11 +482,11 @@ body {
     font-weight: normal;
 }
 .textual a {
-    color: inherit;
+    color: rgba(255, 255, 255, 1);
     text-decoration: none;
 }
 a[href^="tel"] {
-    color: inherit;
+    color: rgba(255, 255, 255, 1);
     text-decoration: none;
 }
 .textual a:hover, a:focus {
