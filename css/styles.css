@@ -98,7 +98,7 @@ body {
 }
 .header__container {
     height: 56rem;
-    background: url("../img/header/640/mercedes-benz-red-640w.jpg") no-repeat;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100%;
     position: relative;
@@ -114,7 +114,8 @@ body {
     color: rgba(255, 255, 255, 1);
 }
 .storecategories__container {
-    background: rgba(0, 0, 0, 1) url("../img/categories-pic/640/ferrari-bg-640x2.jpg") no-repeat;
+    background-color: rgba(0, 0, 0, 1);
+    background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100%;
     position: relative;
@@ -126,8 +127,10 @@ body {
     color: rgba(255, 255, 255, 1);
 }
 .storestuff__container {
-    background: rgba(0, 0, 0, 1) url("../img/categories-pic/640/timesave-bg-hand.jpg") no-repeat center;
-    background-size: cover;
+    background-color: rgba(0, 0, 0, 1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
     position: relative;
     color: rgba(255, 255, 255, 1);
 }
@@ -317,16 +320,16 @@ body {
 .productslide-indents {
     padding: 0.8rem;
     background: rgba(255, 255, 255, 1);
-    box-shadow: 0px 1rem 2rem -2.4rem rgba(0, 0, 0, 1), 0px -1rem 2rem -2.4rem rgba(0, 0, 0, 1);
+    box-shadow: 0 1rem 2rem -2.4rem rgba(0, 0, 0, 1), 0 -1rem 2rem -2.4rem rgba(0, 0, 0, 1);
 }
 .galleryindents {
     width: 100%;
     height: auto;
     padding-bottom: 75%;
     position: relative;
-    background-size: 14.4rem auto;
+    background-size: 48.75% auto;
     background-repeat: no-repeat;
-    background-position: center right;
+    background-position: right center;
 }
 .productwrapindents {
     padding: 0 0 8rem 0;
@@ -349,7 +352,7 @@ body {
 
 .color-indents {
     width: 100%;
-    max-width: 14.4rem;
+    max-width: 48.75%;
     padding: 0.8rem;
     position: absolute;
     left: 0;
@@ -380,7 +383,7 @@ body {
 }
 .borderframing {
     width: 100%;
-    height: 0.6rem;
+    height: 0.4rem;
     font-size: 0;
     line-height: 0;
     background-color: rgba(60, 180, 226, 1);
@@ -404,7 +407,7 @@ body {
 }
 .stuffpanelindents {
     max-width: 20rem;
-    padding: 0 1.6rem 0.8rem;
+    padding: 0 1.6rem 0.6rem;
     margin: 0 auto;
     line-height: 1;
     background: rgba(60, 180, 226, 1);
@@ -562,6 +565,11 @@ a[href^="tel"] {
     line-height: 1.5;
     font-weight: normal;
 }
+.textual-small h5 {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: normal;
+}
 .textproduct {
     font-family: 'PT Sans', Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -621,3 +629,63 @@ a[href^="tel"] {
 /* Конец: Типография*/
 
 /* Конец: Модификаторы*/
+@media all and (min-width: 160px) and (max-width: 320px) {
+    .header__container {
+        background-image: url("../img/header/640/mercedes-benz-red-640.jpg");
+    }
+    .storecategories__container {
+        background-image: url("../img/categories-pic/640/ferrari-bg-640.jpg");
+    }
+    .storestuff__container {
+        background-image: url("../img/stuff/640/engine-bg-640.jpg");
+    }
+}
+@media all and (min-width: 321px) and (max-width: 400px) {
+    .header__container {
+        background-image: url("../img/header/800/mercedes-benz-red-800.jpg");
+    }
+    .storecategories__container {
+        background-image: url("../img/categories-pic/800/ferrari-bg-800.jpg");
+    }
+    .storestuff__container {
+        background-image: url("../img/stuff/800/engine-bg-800.jpg");
+    }
+}
+@media all and (min-width: 401px) and (max-width: 480px) {
+    .header__container {
+        background-image: url("../img/header/960/mercedes-benz-red-960.jpg");
+    }
+    .storecategories__container {
+        background-image: url("../img/categories-pic/960/ferrari-bg-960.jpg");
+    }
+    .storestuff__container {
+        background-image: url("../img/stuff/960/engine-bg-960.jpg");
+    }
+}
+@media all and (min-width: 481px) and (max-width: 560px) {
+    .header__container {
+        background-image: url("../img/header/1120/mercedes-benz-red-1120.jpg");
+    }
+    .storecategories__container {
+        background-image: url("../img/categories-pic/1120/ferrari-bg-1120.jpg");
+    }
+    .storestuff__container {
+        background-image: url("../img/stuff/1120/engine-bg-1120.jpg");
+    }
+}
+@media all and (min-width: 561px) and (max-width: 640px) {
+    .header__container {
+        background-image: url("../img/header/1280/mercedes-benz-red-1280.jpg");
+    }
+    .storecategories__container {
+        background-image: url("../img/categories-pic/1280/ferrari-bg-1280.jpg");
+    }
+    .storestuff__container {
+        background-image: url("../img/stuff/1280/engine-bg-1280.jpg");
+    }
+}
+
+/* Начало: Модификаторы*/
+/* Конец: Модификаторы*/
+/* Начало: Типография*/
+/* Конец: Типография*/
