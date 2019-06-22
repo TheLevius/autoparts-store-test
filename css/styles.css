@@ -163,11 +163,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 .opaciting {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
     transition: 300ms;
 }
 .opaciting:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0);
 }
 .opaciting2 {
     background-color: rgba(0, 0, 0, 0.1);
@@ -205,14 +205,15 @@ body {
     margin: 0 auto;
     overflow: hidden;
 }
-#storename__kalilaska {
+.kalilaska-pos {
     position: absolute;
     top: 6.4rem;
+    margin: auto;
     z-index: 2;
     white-space: nowrap;
     text-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.8);
 }
-#panel__phoneshedule {
+.panel-phoneshedule {
     position: absolute;
     bottom: 0;
     z-index: 2;
@@ -221,6 +222,11 @@ body {
     padding: 0 0 5.6rem 0;
     white-space: nowrap;
     text-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.8);
+}
+.phoneshedule-indents {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
 }
 .representindents {
     padding: 6rem 0;
@@ -232,7 +238,7 @@ body {
     clear: right;
 }
 .categormount {
-    padding: 2rem 0.8rem;
+    padding: 2.4rem 0.8rem;
     text-align: center;
     border-radius: 0.8rem;
     color: rgba(255, 255, 255, 255);
@@ -240,7 +246,7 @@ body {
 }
 .categorwrapper {
     width: 100%;
-    max-width: 14rem;
+    max-width: 12.8rem;
     padding: 1.6rem;
     margin: 0 auto;
     border-radius: 50%;
@@ -311,7 +317,7 @@ body {
 }
 
 .categorsignindents {
-    padding-top: 1.2rem;
+    padding-top: 1.4rem;
 }
 .timesaveindents {
     padding: 4rem 0;
@@ -325,6 +331,9 @@ body {
     background: rgba(255, 255, 255, 1);
 
 }
+.gallerymount {
+    width: 100%;
+}
 .galleryindents {
     width: 100%;
     height: auto;
@@ -335,6 +344,7 @@ body {
     background-position: right center;
 }
 .productwrapindents {
+    max-width: 64rem;
     padding: 0;
     margin: 0 auto 8rem;
     box-shadow: 0 1rem 2rem -2.4rem rgba(0, 0, 0, 1), 0 -1rem 2rem -2.4rem rgba(0, 0, 0, 1);
@@ -429,6 +439,7 @@ body {
 }
 .sliderstuff {
     width: 100%;
+    max-width: 32rem;
     height: auto;
     margin: 0 auto;
     position: relative;
@@ -473,8 +484,10 @@ body {
     right: 0;
 }
 
-.addresindents {
-    padding: 6rem 0 3.2rem;
+.addressindents {
+
+    padding: 6rem 1.6rem 3.2rem;
+    margin: 0 auto;
     color: rgba(90, 90, 90, 0.8);
 }
 .clearfixing {
@@ -490,8 +503,15 @@ body {
     background-color: rgba(70, 95, 105, 1);
     color: rgba(255, 255, 255, 0.4);
 }
+.footercol {
+    width: 100%;
+    padding: 3.2rem 1.6rem;
+}
 .footercontent {
-    padding: 2.4rem 0;
+
+}
+.mapsheight {
+    height: 32rem;
 }
 /* Начало: Типография*/
 
@@ -720,6 +740,8 @@ a[href^="tel"] {
     }
     .storecategories__container {
         background-image: url("../img/categories-pic/ferrari-bg/1120/ferrari-bg-1120x1.jpg");
+        background-size: 100% auto;
+        background-position: center bottom;
     }
     .storestuff__container {
         background-image: url("../img/stuff/engine-bg/1120/engine-bg-1120x1.jpg");
@@ -736,10 +758,48 @@ a[href^="tel"] {
         background-image: url("../img/stuff/engine-bg/1280/engine-bg-1280x1.jpg");
     }
 }
-
+@media all and (max-width: 1440px) and (min-width: 1280px) {
+    .header__container {
+        background-image: url("../img/header/mercedes-benz-bg/1440/mercedes-benz-bg-1440x1.jpg");
+    }
+    .storecategories__container {
+        background-image: url("../img/categories-pic/ferrari-bg/1440/ferrari-bg-1440x1.jpg");
+        background-size: 100% auto;
+        background-position: center bottom;
+    }
+    .storestuff__container {
+        background-image: url("../img/stuff/engine-bg/1440/engine-bg-1440x1.jpg");
+    }
+}
+@media all and (max-width: 1600px) and (min-width: 1440px) {
+    .header__container {
+        background-image: url("../img/header/mercedes-benz-bg/1600/mercedes-benz-bg-1600x1.jpg");
+    }
+    .storecategories__container {
+        background-image: url("../img/categories-pic/ferrari-bg/1600/ferrari-bg-1600x1.jpg");
+        background-size: 100% auto;
+        background-position: center bottom;
+    }
+    .storestuff__container {
+        background-image: url("../img/stuff/engine-bg/1600/engine-bg-1600x1.jpg");
+    }
+}
+@media all and (max-width: 1920px) and (min-width: 1600px) {
+    .header__container {
+        background-image: url("../img/header/mercedes-benz-bg/1920/mercedes-benz-bg-1920x1.jpg");
+    }
+    .storecategories__container {
+        background-image: url("../img/categories-pic/ferrari-bg/1920/ferrari-bg-1920x1.jpg");
+        background-size: 100% auto;
+        background-position: center bottom;
+    }
+    .storestuff__container {
+        background-image: url("../img/stuff/engine-bg/1920/engine-bg-1920x1.jpg");
+    }
+}
 
 @media all  and (max-width: 400px) and (min-width: 361px) {
-    #storename__kalilaska {
+    .kalilaska-pos {
         top: 5.6rem;
     }
     .textual h1 {
@@ -780,7 +840,7 @@ a[href^="tel"] {
     }
 }
 @media all and (max-width: 560px) and (min-width: 401px) {
-    #storename__kalilaska {
+    .kalilaska-pos {
         top: 4rem;
     }
     .color-indents {
@@ -792,7 +852,6 @@ a[href^="tel"] {
     .galleryindents {
         background-size: 48% auto;
     }
-
     .textual h1 {
         font-size: 6.2rem;
         line-height: 1.5;
@@ -882,7 +941,7 @@ a[href^="tel"] {
     }
 }
 @media all and (max-width: 640px) and (min-width: 561px) {
-    #storename__kalilaska {
+    .kalilaska-pos {
         top: 3.2rem;
     }
     .headindents {
@@ -1004,7 +1063,7 @@ a[href^="tel"] {
     .singlecol, .singleheadcol {
         max-width: 64rem;
     }
-    #storename__kalilaska {
+    .kalilaska-pos {
         top: 3.2rem;
     }
     .headindents {
@@ -1025,10 +1084,10 @@ a[href^="tel"] {
         background-position: right center;
         padding-bottom: 66%;
     }
-
     .advanced-info {
         display: block;
     }
+
     .textual h1 {
         font-size: 6.2rem;
         line-height: 8rem;
@@ -1126,7 +1185,7 @@ a[href^="tel"] {
     .singlecol, .singleheadcol {
         max-width: 64rem;
     }
-    #storename__kalilaska {
+    .kalilaska-pos {
         top: 3.2rem;
     }
     .headindents {
@@ -1140,7 +1199,7 @@ a[href^="tel"] {
     }
     .categorcol {
         max-width: 100%;
-        padding: 8rem 0;
+        padding: 6rem 0;
     }
     .categorwide {
         width: 25%;
@@ -1150,31 +1209,30 @@ a[href^="tel"] {
     .clearfixing {
         display: none;
     }
-
     .adaptiveimg img {
         max-width: 16rem;
     }
+    .gallerymount {
+        background-color: rgba(255, 255, 255, 1);
+    }
     .productslide-indents {
-        padding: 7%;
+        padding: 4rem 1.6rem;
     }
     .color-indents {
         width: 100%;
-        max-width: 46%;
+        max-width: 44%;
         padding: 1.6rem;
         left: 0;
         bottom: 0;
     }
     .galleryindents {
-        background-size: 46% auto;
+        background-size: 48% auto;
         background-position: right center;
         padding-bottom: 66%;
     }
 
     .advanced-info {
         display: block;
-    }
-    .sliderstuff {
-        max-width: 32rem;
     }
 
     .textual h1 {
@@ -1213,7 +1271,10 @@ a[href^="tel"] {
         line-height: 1.5;
         font-weight: normal;
     }
-
+    .textual p span {
+        font-weight: bold;
+        text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 1);
+    }
     .textproduct h1 {
         font-size: 2.4rem;
         line-height: 1.2;
@@ -1264,9 +1325,201 @@ a[href^="tel"] {
         color: inherit;
         text-decoration: none;
     }
+}
+@media all and (min-width: 961px) {
+    .wideadaptive {
+        max-width: 100%;
+    }
+    .singlecol, .singleheadcol {
+        max-width: 64rem;
+    }
+    .addressindents {
+        padding: 8rem 3.2rem 3.2rem;
+
+    }
+    .kalilaska-pos {
+        top: 8%;
+        right: 0;
+        left: 0;
+        text-align: center;
+
+    }
+    .panel-phoneshedule {
+        position: absolute;
+        right: 0;
+        bottom: 3.2rem;
+        left: 0;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .headindents {
+        width: 50%;
+        padding: 1.6rem;
+        float: left;
+    }
+    .phoneshedule-indents {
+        max-width: 80rem;
+
+    }
+    .representindents {
+        padding: 8rem 0;
+    }
+    .consultindents {
+        padding: 1.6rem 0 7.2rem;
+    }
+    .categorcol {
+        max-width: 80rem;
+        padding: 8rem 1.6rem;
+    }
+    .categorwide {
+        width: 25%;
+        display: inline-block;
+        white-space: nowrap;
+    }
+    .categormount {
+        max-width: 17.6rem;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    .timesaveindents {
+        padding: 8rem 0;
+    }
+    .clearfixing {
+        display: none;
+    }
+    .adaptiveimg img {
+        max-width: 16rem;
+    }
+    .gallerymount {
+        background-color: rgba(255, 255, 255, 1);
+    }
+    .productslide-indents {
+        padding: 2.4rem 1.6rem;
+    }
+    .color-indents {
+        width: 100%;
+        max-width: 46%;
+        padding: 1.6rem;
+        left: 0;
+        bottom: 0;
+    }
+    .galleryindents {
+        background-size: 46% auto;
+        background-position: right center;
+        padding-bottom: 66%;
+    }
+
+    .advanced-info {
+        display: block;
+    }
+    .footercol {
+        padding: 3.2rem;
+    }
+    .mapsheight {
+        height: 48rem;
+    }
+
+    .textual h1 {
+        font-size: 6.2rem;
+        line-height: 8rem;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+    }
+    .textual h2 {
+        font-size: 3.6rem;
+        line-height: 5.2rem;
+        font-weight: bold;
+    }
+    .textual h3 {
+        font-size: 3.6rem;
+        line-height: 5.2rem;
+        font-weight: normal;
+    }
+    .textual h4 {
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+        font-weight: normal;
+    }
+    .textual h5 {
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+        font-weight: normal;
+    }
+    .textual h6 {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        font-weight: bold;
+    }
+    .textual p {
+        font-size: 2rem;
+        line-height: 1.5;
+        font-weight: normal;
+    }
+    .textual p span {
+        font-weight: bold;
+        text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 1);
+    }
+    .textproduct h1 {
+        font-size: 2.8rem;
+        line-height: 3.6rem;
+        font-weight: bold;
+    }
+    .textproduct h2 {
+        font-size: 3.2rem;
+        line-height: 4rem;
+        font-weight: normal;
+    }
+    .textproduct h3 {
+        font-size: 2rem;
+        line-height: 2.8rem;
+        font-weight: normal;
+    }
+    .textproduct h4 {
+        padding-top: 0.8rem;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        font-weight: normal;
+    }
+    .textproduct h5 {
+        padding-top: 1.6rem;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        font-weight: normal;
+    }
+    .textproduct h6 {
+        font-size: 2rem;
+        line-height: 1.6rem;
+        font-weight: bold;
+    }
+    .textproduct p {
+        padding: 0;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        font-weight: normal;
+    }
+    .textproduct sup {
+        font-size: 60%;
+        line-height: 0;
+    }
+    .textproduct a {
+        color: inherit;
+        text-decoration: none;
+    }
+    .textproduct a:hover, a:focus {
+        color: inherit;
+        text-decoration: none;
+    }
+    .kalilaska-pos h1 {
+        font-size: 8rem;
+        text-shadow: 0.2rem 0.2rem 0 rgba(0, 0, 0, 1);
+    }
+    .kalilaska-pos h3 {
+        font-size: 4rem;
+        letter-spacing: 0.2rem;
+        text-shadow: 0.1rem 0.2rem 0 rgba(0, 0, 0, 1);
+    }
 
 }
-
 /* Начало: Модификаторы*/
 /* Конец: Модификаторы*/
 /* Начало: Типография*/
