@@ -753,6 +753,8 @@ a[href^="tel"] {
     }
     .storecategories__container {
         background-image: url("../img/categories-pic/ferrari-bg/1280/ferrari-bg-1280x1.jpg");
+        background-size: 100% auto;
+        background-position: center bottom;
     }
     .storestuff__container {
         background-image: url("../img/stuff/engine-bg/1280/engine-bg-1280x1.jpg");
@@ -1087,6 +1089,9 @@ a[href^="tel"] {
     .advanced-info {
         display: block;
     }
+    .gallerymount {
+        background-color: rgba(255, 255, 255, 1);
+    }
 
     .textual h1 {
         font-size: 6.2rem;
@@ -1326,7 +1331,7 @@ a[href^="tel"] {
         text-decoration: none;
     }
 }
-@media all and (min-width: 961px) {
+@media all and (min-width: 961px) and (max-width: 1920px) {
     .wideadaptive {
         max-width: 100%;
     }
