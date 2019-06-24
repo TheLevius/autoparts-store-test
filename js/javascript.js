@@ -4,14 +4,18 @@ $(document).ready(function() {
     var stuffOwl = $('.storestuff__cellswrap');
     stuffOwl.owlCarousel({
         loop:true,
-        margin:100,
+        margin:16,
         dots:false,
+
         responsive:{
             0:{
                 items:1
             },
-            1440:{
-                items:1
+            640: {
+                items:2
+            },
+            961:{
+                items:4
             }
         }
     });
@@ -34,7 +38,7 @@ $(document).ready(function() {
             0:{
                 items:1
             },
-            1440:{
+            961:{
                 items:1
             }
         }
