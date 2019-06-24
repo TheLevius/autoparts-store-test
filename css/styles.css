@@ -403,6 +403,13 @@ body {
     line-height: 0;
     background-color: rgba(60, 180, 226, 1);
 }
+.stuffcol {
+    width: 100%;
+    max-width: 48rem;
+    padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
 .stuffwrapper {
     max-width: 18rem;
     margin: 0 auto;
@@ -435,12 +442,12 @@ body {
 .stuffnamesindents {
     padding: 2.4rem 0 0;
     text-shadow: 0 0 0.4rem rgba(0, 0, 0, 1);
-    letter-spacing: 0.1rem;
 }
 .sliderstuff {
     width: 100%;
     max-width: 32rem;
     height: auto;
+    padding: 0 6.4rem;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -462,19 +469,19 @@ body {
     margin: auto;
     font-size: 3.2rem;
     line-height: 1;
-    color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.4);
     position: absolute;
     top: 0;
     bottom: 0;
 }
 .rightnavi {
-    right: 0;
+    right: 1.6rem;
 }
 .leftnavi {
-    left: 0;
+    left: 1.6rem;
 }
 .rightnavi:hover .typonavi, .leftnavi:hover .typonavi {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .rightpositsymbol {
@@ -513,6 +520,7 @@ body {
 .mapsheight {
     height: 32rem;
 }
+
 /* Начало: Типография*/
 
 .stufftypocolor {
@@ -583,12 +591,12 @@ a[href^="tel"] {
 }
 .textual-small p {
     font-size: 1.6rem;
-    line-height: 1.5;
+    line-height: 2rem;
     font-weight: normal;
 }
 .textual-small h4 {
-    font-size: 2.4rem;
-    line-height: 1.5;
+    font-size: 2rem;
+    line-height: 3.2rem;
     font-weight: normal;
 }
 .textual-small h5 {
@@ -741,10 +749,13 @@ a[href^="tel"] {
     .storecategories__container {
         background-image: url("../img/categories-pic/ferrari-bg/1120/ferrari-bg-1120x1.jpg");
         background-size: 100% auto;
-        background-position: center bottom;
+        background-position: center;
     }
     .storestuff__container {
         background-image: url("../img/stuff/engine-bg/1120/engine-bg-1120x1.jpg");
+        background-size: auto 100%;
+        background-position: center;
+
     }
 }
 @media all and (max-width: 1280px) and (min-width: 1121px) {
@@ -758,6 +769,8 @@ a[href^="tel"] {
     }
     .storestuff__container {
         background-image: url("../img/stuff/engine-bg/1280/engine-bg-1280x1.jpg");
+        background-size: auto 100%;
+        background-position: center;
     }
 }
 @media all and (max-width: 1440px) and (min-width: 1280px) {
@@ -771,6 +784,8 @@ a[href^="tel"] {
     }
     .storestuff__container {
         background-image: url("../img/stuff/engine-bg/1440/engine-bg-1440x1.jpg");
+        background-size: auto 100%;
+        background-position: center;
     }
 }
 @media all and (max-width: 1600px) and (min-width: 1440px) {
@@ -784,6 +799,8 @@ a[href^="tel"] {
     }
     .storestuff__container {
         background-image: url("../img/stuff/engine-bg/1600/engine-bg-1600x1.jpg");
+        background-size: auto 100%;
+        background-position: center;
     }
 }
 @media all and (max-width: 1920px) and (min-width: 1600px) {
@@ -797,6 +814,8 @@ a[href^="tel"] {
     }
     .storestuff__container {
         background-image: url("../img/stuff/engine-bg/1920/engine-bg-1920x1.jpg");
+        background-size: auto 100%;
+        background-position: center;
     }
 }
 
@@ -968,6 +987,7 @@ a[href^="tel"] {
     .advanced-info {
         display: block;
     }
+
     .textual h1 {
         font-size: 6.2rem;
         line-height: 1.5;
@@ -1091,6 +1111,19 @@ a[href^="tel"] {
     }
     .gallerymount {
         background-color: rgba(255, 255, 255, 1);
+    }
+    .stuffcol {
+        max-width: 100%;
+        padding: 0 1.6rem;
+    }
+    .sliderstuff {
+        max-width: 64rem;
+    }
+    .stuffwrapper {
+        max-width: 16rem;
+    }
+    .stuffcellindents {
+        padding: 6.2rem 0;
     }
 
     .textual h1 {
@@ -1238,6 +1271,16 @@ a[href^="tel"] {
 
     .advanced-info {
         display: block;
+    }
+    .stuffcol {
+        max-width: 100%;
+        padding: 0 1.6rem;
+    }
+    .sliderstuff {
+        max-width: 64rem
+    }
+    .stuffwrapper {
+        max-width: 16rem;
     }
 
     .textual h1 {
@@ -1413,7 +1456,21 @@ a[href^="tel"] {
         background-position: right center;
         padding-bottom: 66%;
     }
-
+    .stuffcol {
+        max-width: 128rem;
+    }
+    .stuffcellindents {
+        padding: 7.2rem 0;
+    }
+    .slidepos {
+        display: none;
+    }
+    .sliderstuff {
+        max-width: 100%;
+    }
+    .stuffwrapper {
+        max-width: 14rem;
+    }
     .advanced-info {
         display: block;
     }
